@@ -1,0 +1,6 @@
+2023-05-12 18:33:56.650 [main] INFO  api.test.UserEndpointsTests - ************   Creating User   **************
+2023-05-12 18:34:04.645 [main] INFO  api.test.UserEndpointsTests - ************   Getting User info **************
+2023-05-12 18:34:05.189 [main] INFO  api.test.UserEndpointsTests - ************   Updating User Data   **************
+2023-05-12 18:34:05.259 [main] INFO  api.test.UserEndpointsTests - ************   Deleting Users   **************
+2023-05-12 18:34:05.737 [main] INFO  api.test.UserEndpointsTests - ************   LogIn to the Api   **************
+2023-05-12 18:34:06.220 [main] INFO  api.test.UserEndpointsTests - ************   Logout from the Api   **************
