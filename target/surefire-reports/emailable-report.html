@@ -9,31 +9,93 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">14,520</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">21</td><td class="num">18,354</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">api.test.UserEndpointsTests</td><td><a href="#m0">testDeleteUser</a></td><td rowspan="1">1683941645256</td><td rowspan="1">476</td></tr><tr class="failedeven"><td><a href="#m1">testGetUser</a></td><td rowspan="1">1683941644644</td><td rowspan="1">540</td></tr><tr class="failedeven"><td><a href="#m2">testLoginUser</a></td><td rowspan="1">1683941645737</td><td rowspan="1">479</td></tr><tr class="failedeven"><td><a href="#m3">testLogoutUser</a></td><td rowspan="1">1683941646219</td><td rowspan="1">453</td></tr><tr class="failedeven"><td><a href="#m4">testPostUser</a></td><td rowspan="1">1683941636634</td><td rowspan="1">7969</td></tr><tr class="failedeven"><td><a href="#m5">testUpdateUser</a></td><td rowspan="1">1683941645188</td><td rowspan="1">61</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">api.test.PetEndpointsTests</td><td><a href="#m0">testDeletePetById</a></td><td rowspan="1">1684352862973</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">testGetPetById</a></td><td rowspan="1">1684352862985</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="13">api.test.StoreEndpointsTests</td><td><a href="#m2">testCreateOrder</a></td><td rowspan="10">1684352873165</td><td rowspan="10">480</td></tr><tr class="failedodd"><td><a href="#m3">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m4">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m5">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m6">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m7">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m8">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m9">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m10">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m11">testCreateOrder</a></td></tr><tr class="failedodd"><td><a href="#m12">testDeleteOrderById</a></td><td rowspan="1">1684352875630</td><td rowspan="1">0</td></tr><tr class="failedodd"><td><a href="#m13">testGetOrderById</a></td><td rowspan="1">1684352875626</td><td rowspan="1">0</td></tr><tr class="failedodd"><td><a href="#m14">testGetStoreInventory</a></td><td rowspan="1">1684352863690</td><td rowspan="1">3961</td></tr><tr class="failedeven"><td rowspan="6">api.test.UserEndpointsTests</td><td><a href="#m15">testDeleteUser</a></td><td rowspan="1">1684352877899</td><td rowspan="1">471</td></tr><tr class="failedeven"><td><a href="#m16">testGetUser</a></td><td rowspan="1">1684352877227</td><td rowspan="1">607</td></tr><tr class="failedeven"><td><a href="#m17">testLoginUser</a></td><td rowspan="1">1684352878374</td><td rowspan="1">472</td></tr><tr class="failedeven"><td><a href="#m18">testLogoutUser</a></td><td rowspan="1">1684352878849</td><td rowspan="1">451</td></tr><tr class="failedeven"><td><a href="#m19">testPostUser</a></td><td rowspan="1">1684352876548</td><td rowspan="1">639</td></tr><tr class="failedeven"><td><a href="#m20">testUpdateUser</a></td><td rowspan="1">1684352877838</td><td rowspan="1">48</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">api.test.PetEndpointsTests</td><td><a href="#m21">testAddPet</a></td><td rowspan="1">1684352862961</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m22">testUpdatePet</a></td><td rowspan="1">1684352862991</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">api.test.UserEndpointsTests#testDeleteUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+<h2>Surefire test</h2><h3 id="m0">api.test.PetEndpointsTests#testDeletePetById</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testDeletePetById] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.PetEndpointsTests#testGetPetById</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testGetPetById] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">api.test.StoreEndpointsTests#testCreateOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testCreateOrder(StoreEndpointsTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">api.test.StoreEndpointsTests#testDeleteOrderById</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Method public void api.test.StoreEndpointsTests.testDeleteOrderById(int) requires a @DataProvider named : orderId in class api.utility.Staticprovider
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">api.test.StoreEndpointsTests#testGetOrderById</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Method public void api.test.StoreEndpointsTests.testGetOrderById(int) requires a @DataProvider named : orderId in class api.utility.Staticprovider
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">api.test.StoreEndpointsTests#testGetStoreInventory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+	at api.test.StoreEndpointsTests.testGetStoreInventory(StoreEndpointsTests.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">api.test.UserEndpointsTests#testDeleteUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
 	at api.test.UserEndpointsTests.testDeleteUser(UserEndpointsTests.java:74)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.UserEndpointsTests#testGetUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+<h3 id="m16">api.test.UserEndpointsTests#testGetUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
 	at api.test.UserEndpointsTests.testGetUser(UserEndpointsTests.java:55)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.test.UserEndpointsTests#testLoginUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+<h3 id="m17">api.test.UserEndpointsTests#testLoginUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
 	at api.test.UserEndpointsTests.testLoginUser(UserEndpointsTests.java:83)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">api.test.UserEndpointsTests#testLogoutUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+<h3 id="m18">api.test.UserEndpointsTests#testLogoutUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
 	at api.test.UserEndpointsTests.testLogoutUser(UserEndpointsTests.java:92)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">api.test.UserEndpointsTests#testPostUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
+<h3 id="m19">api.test.UserEndpointsTests#testPostUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [500] but found [200]
 	at api.test.UserEndpointsTests.testPostUser(UserEndpointsTests.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">api.test.UserEndpointsTests#testUpdateUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: username.
+<h3 id="m20">api.test.UserEndpointsTests#testUpdateUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: username.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
@@ -105,5 +167,7 @@
 	at api.test.UserEndpointsTests.testUpdateUser(UserEndpointsTests.java:63)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 47 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">api.test.PetEndpointsTests#testAddPet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">api.test.PetEndpointsTests#testUpdatePet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

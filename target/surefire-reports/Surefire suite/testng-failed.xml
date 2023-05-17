@@ -8,13 +8,31 @@
           <include name="testPostUser"/>
           <include name="setup"/>
           <include name="afterSuite"/>
-          <include name="testDeleteUser"/>
           <include name="testLoginUser"/>
+          <include name="testDeleteUser"/>
           <include name="testUpdateUser"/>
-          <include name="testGetUser"/>
           <include name="testLogoutUser"/>
+          <include name="testGetUser"/>
         </methods>
       </class> <!-- api.test.UserEndpointsTests -->
+      <class name="api.test.PetEndpointsTests">
+        <methods>
+          <include name="setup"/>
+          <include name="testGetPetById"/>
+          <include name="afterSuite"/>
+          <include name="testDeletePetById"/>
+        </methods>
+      </class> <!-- api.test.PetEndpointsTests -->
+      <class name="api.test.StoreEndpointsTests">
+        <methods>
+          <include name="testGetOrderById"/>
+          <include name="afterSuite"/>
+          <include name="testCreateOrder" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
+          <include name="setup"/>
+          <include name="testDeleteOrderById"/>
+          <include name="testGetStoreInventory"/>
+        </methods>
+      </class> <!-- api.test.StoreEndpointsTests -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

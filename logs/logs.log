@@ -1,6 +1,20 @@
-2023-05-12 18:33:56.650 [main] INFO  api.test.UserEndpointsTests - ************   Creating User   **************
-2023-05-12 18:34:04.645 [main] INFO  api.test.UserEndpointsTests - ************   Getting User info **************
-2023-05-12 18:34:05.189 [main] INFO  api.test.UserEndpointsTests - ************   Updating User Data   **************
-2023-05-12 18:34:05.259 [main] INFO  api.test.UserEndpointsTests - ************   Deleting Users   **************
-2023-05-12 18:34:05.737 [main] INFO  api.test.UserEndpointsTests - ************   LogIn to the Api   **************
-2023-05-12 18:34:06.220 [main] INFO  api.test.UserEndpointsTests - ************   Logout from the Api   **************
+2023-05-17 12:47:43.702 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Store Inventory **************
+2023-05-17 12:47:48.142 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - OPC Compliance error [M4.1]: there is more than one core properties relationship in the package! POI will use only the first, but other software may reject this file.
+2023-05-17 12:47:48.164 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2023-05-17 12:47:48.177 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2023-05-17 12:47:50.309 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:434  ***************
+2023-05-17 12:47:51.318 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:232  ***************
+2023-05-17 12:47:51.760 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:589  ***************
+2023-05-17 12:47:52.197 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:716  ***************
+2023-05-17 12:47:52.663 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:674  ***************
+2023-05-17 12:47:53.166 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:422  ***************
+2023-05-17 12:47:53.648 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:573  ***************
+2023-05-17 12:47:54.152 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:956  ***************
+2023-05-17 12:47:54.642 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:427  ***************
+2023-05-17 12:47:55.154 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:700  ***************
+2023-05-17 12:47:56.550 [main] INFO  api.test.UserEndpointsTests - ************   Creating User   **************
+2023-05-17 12:47:57.227 [main] INFO  api.test.UserEndpointsTests - ************   Getting User info **************
+2023-05-17 12:47:57.839 [main] INFO  api.test.UserEndpointsTests - ************   Updating User Data   **************
+2023-05-17 12:47:57.900 [main] INFO  api.test.UserEndpointsTests - ************   Deleting Users   **************
+2023-05-17 12:47:58.379 [main] INFO  api.test.UserEndpointsTests - ************   LogIn to the Api   **************
+2023-05-17 12:47:58.849 [main] INFO  api.test.UserEndpointsTests - ************   Logout from the Api   **************
