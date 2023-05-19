@@ -20,7 +20,7 @@ public class ExtentReportManager{
 
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.mm.ss").format(new Date());
         reportName = "Test-Report-" + timeStamp + ".html";
-        sparkReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/"+reportName);
+        sparkReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"/reports/"+reportName);
 
         sparkReporter.config().setDocumentTitle("Rest Assured Automation Project");
         sparkReporter.config().setReportName("Pet Store API");

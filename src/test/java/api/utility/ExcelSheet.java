@@ -11,6 +11,7 @@ package api.utility;
         import org.apache.poi.xssf.usermodel.XSSFSheet;
         import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+        // reads Excel sheet data
 public class ExcelSheet {
 
     public static String path = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\testData.xlsx";

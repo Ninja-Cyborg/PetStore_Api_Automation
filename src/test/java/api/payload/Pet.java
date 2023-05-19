@@ -1,22 +1,19 @@
 package api.payload;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Pet {
 
-    private Long id;
+    private String id;
     private String category;
     private String name;
-    private List<String> photoUrls = new ArrayList<>();
-    private List<String> tags = new ArrayList<>();
+    private String photoUrls;
+    private String tags;
     private String status;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -36,19 +33,19 @@ public class Pet {
         this.name = name;
     }
 
-    public List<String> getPhotoUrls() {
+    public String getPhotoUrls() {
         return photoUrls;
     }
 
-    public void setPhotoUrls(List<String> photoUrls) {
+    public void setPhotoUrls(String photoUrls) {
         this.photoUrls = photoUrls;
     }
 
-    public List<String> getTags() {
+    public String getTags() {
         return tags;
     }
 
-    public void setTags(List<String> tags) {
+    public void setTags(String tags) {
         this.tags = tags;
     }
 

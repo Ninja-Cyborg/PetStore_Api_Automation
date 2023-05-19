@@ -2,6 +2,7 @@ package api.test;
 
 import api.endpoints.UserEndpoints;
 import api.payload.User;
+import api.utility.BaseClass;
 import api.utility.ExtentReportManager;
 import api.utility.Staticprovider;
 import com.github.javafaker.Faker;
@@ -16,15 +17,15 @@ import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
 
-public class UserEndPointsTestDDT {
+public class UserEndPointsTests extends BaseClass {
 
     Faker faker;
     User user;
-    public Logger logger;
+    public static int statusCode;
     @BeforeClass
     public void setup() throws IOException {
         faker = new Faker();
-        ExtentReportManager.setExtent();
+        statusCode = getStatusCode();
         logger = LogManager.getLogger(this.getClass());
     }
 
@@ -48,7 +49,7 @@ public class UserEndPointsTestDDT {
         // assertEquals(response.getStatusCode(), 200);
 
         // on high server load, return 500
-        assertEquals(response.getStatusCode(), 500);
+        assertEquals(response.getStatusCode(), statusCode);
     }
 
     @Test(priority = 2,dataProvider = "usernames",dataProviderClass = Staticprovider.class)
@@ -56,8 +57,8 @@ public class UserEndPointsTestDDT {
         logger.info("************   Getting User Info **************");
         Response response = UserEndpoints.getUser(username);
 
-        // on high server load, return 500
-        assertEquals(response.getStatusCode(), 500);
+        // on high server load, return statusCode
+        assertEquals(response.getStatusCode(), statusCode);
     }
 
     // add updateUserTest
@@ -67,12 +68,7 @@ public class UserEndPointsTestDDT {
         logger.info("************   Deleting User **************");
         Response response = UserEndpoints.deleteUser(username);
 
-        // on high server load, return 500
-        assertEquals(response.getStatusCode(), 500);
-    }
-
-    @AfterClass
-    public void afterSuite() {
-        ExtentReportManager.endReport();
+        // on high server load, return statusCode
+        assertEquals(response.getStatusCode(), statusCode);
     }
 }

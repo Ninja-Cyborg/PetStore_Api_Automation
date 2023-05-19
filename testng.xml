@@ -4,25 +4,11 @@
     <listeners>
         <listener class-name="api.utility.Listeners"></listener>
     </listeners>
-            <test verbose="2" preserve-order="true" name="User Model Api Testing">
+            <test verbose="2" preserve-order="true" name=" Api Testing">
                 <classes>
-                    <class name="api.test.UserEndPointsTestDDT"/>
-<!--                        <methods>-->
-<!--                            <include name="testPostUser"/>-->
-<!--                            <include name="testGetUser"/>-->
-<!--                            <include name="testDeleteUser"/>-->
-<!--                        </methods>-->
-<!--                    </class>-->
-                    <class name="api.test.UserEndpointsTests"/>
-<!--                        <methods>-->
-<!--                            <include name="testPostUser"/>-->
-<!--                            <include name="testGetUser"/>-->
-<!--                            <include name="testUpdateUser"/>-->
-<!--                            <include name="testDeleteUser"/>-->
-<!--                            <include name="testLoginUser"/>-->
-<!--                            <include name="testLogoutUser"/>-->
-<!--                        </methods>-->
-<!--                    </class>-->
+                    <class name="api.test.UserEndPointsTests"/>
+                    <class name="api.test.PetEndpointsTests"/>
+                    <class name="api.test.StoreEndpointsTests"></class>
                 </classes>
             </test>
 </suite>

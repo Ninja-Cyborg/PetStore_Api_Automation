@@ -56,6 +56,21 @@ public class Staticprovider {
         return data;
     }
 
+    @DataProvider(name="orderId")
+    public String[] getOrderId(){
+        String sheetName = "orders";
+
+        int rows = excelSheet.getRowCount(sheetName);
+        rows = rows-1;
+
+        String [] orderIds = new String[rows];
+        for(int i =0; i< rows; i++) {
+            // ids are in first column
+            orderIds[i] = excelSheet.getCellData(sheetName, 1, i+1);
+        }
+        return orderIds;
+    }
+
     @DataProvider(name="pets")
     public Object[][] getPets(){
         String sheetName = "pets";
@@ -71,5 +86,20 @@ public class Staticprovider {
             }
         }
         return data;
+    }
+
+    @DataProvider(name="petId")
+    public String[] getPetId(){
+        String sheetName = "pets";
+
+        int rows = excelSheet.getRowCount(sheetName);
+        rows = rows-1;
+
+        String [] petIds = new String[rows];
+        for(int i =0; i< rows; i++) {
+            // ids are in first column
+            petIds[i] = excelSheet.getCellData(sheetName, 1, i+1);
+        }
+        return petIds;
     }
 }

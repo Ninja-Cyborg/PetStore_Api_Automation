@@ -1,20 +1,61 @@
-2023-05-17 12:47:43.702 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Store Inventory **************
-2023-05-17 12:47:48.142 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - OPC Compliance error [M4.1]: there is more than one core properties relationship in the package! POI will use only the first, but other software may reject this file.
-2023-05-17 12:47:48.164 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-2023-05-17 12:47:48.177 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-2023-05-17 12:47:50.309 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:434  ***************
-2023-05-17 12:47:51.318 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:232  ***************
-2023-05-17 12:47:51.760 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:589  ***************
-2023-05-17 12:47:52.197 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:716  ***************
-2023-05-17 12:47:52.663 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:674  ***************
-2023-05-17 12:47:53.166 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:422  ***************
-2023-05-17 12:47:53.648 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:573  ***************
-2023-05-17 12:47:54.152 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:956  ***************
-2023-05-17 12:47:54.642 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:427  ***************
-2023-05-17 12:47:55.154 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:700  ***************
-2023-05-17 12:47:56.550 [main] INFO  api.test.UserEndpointsTests - ************   Creating User   **************
-2023-05-17 12:47:57.227 [main] INFO  api.test.UserEndpointsTests - ************   Getting User info **************
-2023-05-17 12:47:57.839 [main] INFO  api.test.UserEndpointsTests - ************   Updating User Data   **************
-2023-05-17 12:47:57.900 [main] INFO  api.test.UserEndpointsTests - ************   Deleting Users   **************
-2023-05-17 12:47:58.379 [main] INFO  api.test.UserEndpointsTests - ************   LogIn to the Api   **************
-2023-05-17 12:47:58.849 [main] INFO  api.test.UserEndpointsTests - ************   Logout from the Api   **************
+2023-05-18 18:34:22.667 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - OPC Compliance error [M4.1]: there is more than one core properties relationship in the package! POI will use only the first, but other software may reject this file.
+2023-05-18 18:34:22.688 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2023-05-18 18:34:22.697 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2023-05-18 18:34:24.065 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:1 **************
+2023-05-18 18:34:27.718 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:2 **************
+2023-05-18 18:34:28.162 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:3 **************
+2023-05-18 18:34:28.655 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:4 **************
+2023-05-18 18:34:29.140 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:5 **************
+2023-05-18 18:34:29.611 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:6 **************
+2023-05-18 18:34:30.088 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:7 **************
+2023-05-18 18:34:30.558 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:8 **************
+2023-05-18 18:34:31.034 [main] INFO  api.test.PetEndpointsTests - ************   Getting Pet with id:9 **************
+2023-05-18 18:34:31.518 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - OPC Compliance error [M4.1]: there is more than one core properties relationship in the package! POI will use only the first, but other software may reject this file.
+2023-05-18 18:34:31.522 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2023-05-18 18:34:31.524 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2023-05-18 18:34:31.626 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:1 **************
+2023-05-18 18:34:32.073 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:2 **************
+2023-05-18 18:34:32.558 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:3 **************
+2023-05-18 18:34:33.033 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:4 **************
+2023-05-18 18:34:33.512 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:5 **************
+2023-05-18 18:34:33.957 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:6 **************
+2023-05-18 18:34:34.433 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:7 **************
+2023-05-18 18:34:34.890 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:8 **************
+2023-05-18 18:34:35.369 [main] INFO  api.test.PetEndpointsTests - ************   Deleting Pet from store with id:9 **************
+2023-05-18 18:34:35.816 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Store Inventory **************
+2023-05-18 18:34:36.300 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - OPC Compliance error [M4.1]: there is more than one core properties relationship in the package! POI will use only the first, but other software may reject this file.
+2023-05-18 18:34:36.304 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2023-05-18 18:34:36.307 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2023-05-18 18:34:36.477 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:413  ***************
+2023-05-18 18:34:37.170 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:343  ***************
+2023-05-18 18:34:37.633 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:353  ***************
+2023-05-18 18:34:38.087 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:18  ***************
+2023-05-18 18:34:38.515 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:665  ***************
+2023-05-18 18:34:38.991 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:776  ***************
+2023-05-18 18:34:39.445 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:216  ***************
+2023-05-18 18:34:39.886 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:815  ***************
+2023-05-18 18:34:40.336 [main] INFO  api.test.StoreEndpointsTests - **************  Creating Order with id:609  ***************
+2023-05-18 18:34:40.796 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - OPC Compliance error [M4.1]: there is more than one core properties relationship in the package! POI will use only the first, but other software may reject this file.
+2023-05-18 18:34:40.801 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2023-05-18 18:34:40.805 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2023-05-18 18:34:40.947 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:1 **************
+2023-05-18 18:34:41.029 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:2 **************
+2023-05-18 18:34:41.066 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:3 **************
+2023-05-18 18:34:41.116 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:4 **************
+2023-05-18 18:34:41.169 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:5 **************
+2023-05-18 18:34:41.198 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:6 **************
+2023-05-18 18:34:41.227 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:7 **************
+2023-05-18 18:34:41.257 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:8 **************
+2023-05-18 18:34:41.276 [main] INFO  api.test.StoreEndpointsTests - ************   Getting Order with id:9 **************
+2023-05-18 18:34:41.318 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - OPC Compliance error [M4.1]: there is more than one core properties relationship in the package! POI will use only the first, but other software may reject this file.
+2023-05-18 18:34:41.324 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2023-05-18 18:34:41.326 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2023-05-18 18:34:41.389 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:1 **************
+2023-05-18 18:34:41.399 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:2 **************
+2023-05-18 18:34:41.417 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:3 **************
+2023-05-18 18:34:41.435 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:4 **************
+2023-05-18 18:34:41.456 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:5 **************
+2023-05-18 18:34:41.485 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:6 **************
+2023-05-18 18:34:41.496 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:7 **************
+2023-05-18 18:34:41.509 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:8 **************
+2023-05-18 18:34:41.521 [main] INFO  api.test.StoreEndpointsTests - ************   Deleting Order with id:9 **************

@@ -3,6 +3,7 @@ package api.test;
 import api.endpoints.StoreEndpoints;
 import api.endpoints.UserEndpoints;
 import api.payload.Store;
+import api.utility.BaseClass;
 import api.utility.ExtentReportManager;
 import api.utility.Staticprovider;
 import com.github.javafaker.Faker;
@@ -17,15 +18,15 @@ import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
 
-public class StoreEndpointsTests {
+public class StoreEndpointsTests extends BaseClass {
 
     Faker faker;
     Store store;
-    public Logger logger;
+    public static int statusCode;
     @BeforeClass
     public void setup() throws IOException {
         faker = new Faker();
-        ExtentReportManager.setExtent();
+        statusCode = getStatusCode();
         logger = LogManager.getLogger(this.getClass());
     }
 
@@ -34,7 +35,7 @@ public class StoreEndpointsTests {
         logger.info("************   Getting Store Inventory **************");
         Response response = StoreEndpoints.getStoreInventory();
 
-        assertEquals(response.getStatusCode(),500);
+        assertEquals(response.getStatusCode(),statusCode);
     }
 
     @Test(priority = 1, dataProvider = "orders", dataProviderClass = Staticprovider.class)
@@ -52,27 +53,25 @@ public class StoreEndpointsTests {
     logger.info("**************  Creating Order with id:"+ store.getOrderId()+ "  ***************");
     Response response = StoreEndpoints.createOrder(store);
 
-    assertEquals(response.getStatusCode(),500);
+    assertEquals(response.getStatusCode(),statusCode);
     }
 
     @Test(priority = 2, dataProvider = "orderId", dataProviderClass = Staticprovider.class)
-    public void testGetOrderById(int orderId){
+    public void testGetOrderById(String id){
+        int orderId = (int)Math.round(Float.parseFloat(id));
         logger.info("************   Getting Order with id:"+ orderId + " **************");
         Response response = StoreEndpoints.getOrderById(orderId);
 
-        assertEquals(response.getStatusCode(), 500);
+        assertEquals(response.getStatusCode(), statusCode);
     }
 
     @Test(priority = 3, dataProvider = "orderId", dataProviderClass = Staticprovider.class)
-    public void testDeleteOrderById(int orderId){
+    public void testDeleteOrderById(String id){
+        int orderId = (int)Math.round(Float.parseFloat(id));
         logger.info("************   Deleting Order with id:"+ orderId + " **************");
         Response response = StoreEndpoints.deleteOrderById(orderId);
 
-        assertEquals(response.getStatusCode(), 500);
+        assertEquals(response.getStatusCode(), statusCode);
     }
 
-    @AfterClass
-    public void afterSuite() {
-        ExtentReportManager.endReport();
-    }
 }
