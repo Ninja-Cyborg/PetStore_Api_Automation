@@ -1,8 +1,10 @@
 # PetStore_Api_Automation
 ### *Rest Assured Framework* - The project was initiated to test [Pet Store Public Api](https://petstore3.swagger.io/). 
 
+##  Framework Structure
+- ![Load Testing (2)](https://github.com/Ninja-Cyborg/PetStore_Api_Automation/assets/66517017/995f0221-c5ff-44c5-884d-21f553954dd4)
+
 # Pre-Requisites
-# Framework Structure
 # Project Feature
 # Challenges and Solutions
 # Test Execution
@@ -14,9 +16,6 @@
 - Maven (build tool)
 - Jenkins (CI pipeline)
 - Git (version control system)
-
-# Framework Structure
-- remaining mindmapper image to upload
 
 # Project Feature
 - Data Driven testing, tests read data from excel sheets
